@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Головна</a></li>
+            <li><a href="{{ url_for('login') }}">Вхід</a></li>
+            <li><a href="{{ url_for('profile') }}">Профіль</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Ласкаво просимо на головну сторінку!</h1>
+</body>
+</html>
