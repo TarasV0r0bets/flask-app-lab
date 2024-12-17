@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Профіль користувача</h2>
+    <p>Username: {{ current_user.username }}</p>
+    <p>Email: {{ current_user.email }}</p>
+    <p>About Me: {{ current_user.about_me }}</p>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.username.label }} {{ form.username() }}</p>
+        <p>{{ form.email.label }} {{ form.email() }}</p>
+        <p>{{ form.about_me.label }} {{ form.about_me() }}</p>
+        <button type="submit">Оновити профіль</button>
+    </form>
+{% endblock %}
