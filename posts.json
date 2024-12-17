@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "TestPost1",
+        "content": "\u043f\u0435\u0440\u0448\u0438\u0439 \u043f\u0440\u043e\u0431\u043d\u0438\u0439 \u043f\u043e\u0441\u0442",
+        "category": "science",
+        "is_active": true,
+        "publication_date": "2024-12-18",
+        "author": "SessionUser"
+    },
+    {
+        "id": 2,
+        "title": "Test Post 1",
+        "content": "\u041f\u0435\u0440\u0448\u0438\u0439 \u043f\u0440\u043e\u0431\u043d\u0438\u0439 \u043f\u043e\u0441\u0442",
+        "category": "tech",
+        "is_active": true,
+        "publication_date": "2024-12-18",
+        "author": "SessionUser"
+    }
+]
