@@ -1,0 +1,12 @@
+{% for enterprise in enterprises %}
+  <div>
+    <h2>{{ enterprise.name }}</h2>
+    <p>{{ enterprise.description }}</p>
+    <p>{{ enterprise.location }}</p>
+    <a href="{{ url_for('main.edit', id=enterprise.id) }}">Редагувати</a>
+    <a href="{{ url_for('main.detail', id=enterprise.id) }}" class="btn btn-info">Детальніше</a>
+    <form action="{{ url_for('main.delete', id=enterprise.id) }}" method="POST">
+      <button type="submit">Видалити</button>
+    </form>
+  </div>
+{% endfor %}

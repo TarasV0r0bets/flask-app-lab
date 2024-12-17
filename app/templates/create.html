@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Додати підприємство</h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.name.label }} {{ form.name() }}
+    </div>
+    <div>
+        {{ form.description.label }} {{ form.description() }}
+    </div>
+    <div>
+        {{ form.location.label }} {{ form.location() }}
+    </div>
+    <div>
+        {{ form.category_id.label }} {{ form.category_id() }}
+    </div>
+    <button type="submit">{{ form.submit.label }}</button>
+</form>
+{% endblock %}
